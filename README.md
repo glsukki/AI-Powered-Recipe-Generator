@@ -1,9 +1,9 @@
 ### AI - Powered Recipe Generator
 
 Leveraging OpenAI's ChatGPT4-Turbo and DALLE-3 to generate a detailed step-by-step instruction to go about creating a recipe, given the following parameters:
-- Cuisine Prefrence
+- Cuisine Preference
 - Ingredients
-- Dietary Prefrences
+- Dietary Preferences
 - Number of Servings
 
 The `generator.py` script incorporates the Streamlit web-app framework to host the Recipe Generator app that allows the User to choose their preferences and generate a unique recipe.
@@ -28,6 +28,5 @@ The structure of the scripts and files are as follows:
 │   └── base_image.png
 └── src
     ├── generateRecipe.py
-    ├── generator.py
-    └── recipe.pdf
+    └── generator.py
 ```
