@@ -12,10 +12,18 @@ The `Recipe` class in the `generateRecipe.py` script makes calls to `OpenAI's` `
 
 Once the recipe is generated, the user can save the recipe by clicking on the `Download Recipe` button which saves the information to `recipe.pdf` file.
 
+The `DALLE-3` LLM is leveraged into creating a realistic image of the suggested recipe.
+
 To run and host the app locally, install the various dependencies and libraries as provided in the `requirements.txt` and run the streamlit app using the below command in terminal:  
 
 ```
+pip install -r requirements.txt
 streamlit run generator.py
+```
+
+In your browser - go to the below link to access the hosted recipe generator app:
+```
+http://localhost:8501/
 ```
 
 The structure of the scripts and files are as follows:

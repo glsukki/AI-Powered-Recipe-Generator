@@ -29,18 +29,6 @@ def getRecipe(cuisines, ingredients, preferences, servings):
         return ERROR_STRING
     return f"Here's the {', '.join(cuisines)} recipe for {', '.join(ingredients)} with {', '.join(preferences)} preferences for {servings} servings. \n{instructions}", recipe_image_url
 
-def generateRecipeDocument(recipe_text):
-    """Generates a recipe pdf file and save information regarding the instructions, serving size and also the health benefits associated with the given recipe.
-
-    Args:
-        recipe_text (str): Information regarding how to create the recipe.
-    """    
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_font("Arial", size=12)
-    pdf.multi_cell(w=200, h=2, txt=recipe_text, align="C")
-    pdf.output("./recipe.pdf")
-
 def sync_generate_image(diary):
     out_path = "./recipe.pdf"
     # if (len(diary) < 500):
